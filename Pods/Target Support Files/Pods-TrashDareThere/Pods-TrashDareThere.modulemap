@@ -1,0 +1,6 @@
+framework module Pods_TrashDareThere {
+  umbrella header "Pods-TrashDareThere-umbrella.h"
+
+  export *
+  module * { export * }
+}
