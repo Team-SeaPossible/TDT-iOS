@@ -10,7 +10,6 @@
 		5D4956640D3A5D9F4E672E48 /* Pods_TrashDareThere.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6778931F189A0FBE089B9B6 /* Pods_TrashDareThere.framework */; };
 		EE563BA82B5A6AB0004F99FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE563BA72B5A6AB0004F99FB /* AppDelegate.swift */; };
 		EE563BAA2B5A6AB0004F99FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE563BA92B5A6AB0004F99FB /* SceneDelegate.swift */; };
-		EE563BAC2B5A6AB0004F99FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE563BAB2B5A6AB0004F99FB /* ViewController.swift */; };
 		EE563BB12B5A6AB1004F99FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE563BB02B5A6AB1004F99FB /* Assets.xcassets */; };
 		EE563BB42B5A6AB1004F99FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE563BB22B5A6AB1004F99FB /* LaunchScreen.storyboard */; };
 		EEE573F32B74CE680040AC56 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE573F22B74CE680040AC56 /* MainViewController.swift */; };
@@ -25,7 +24,6 @@
 		EE563BA42B5A6AB0004F99FB /* TrashDareThere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrashDareThere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE563BA72B5A6AB0004F99FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE563BA92B5A6AB0004F99FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE563BAB2B5A6AB0004F99FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE563BB02B5A6AB1004F99FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE563BB32B5A6AB1004F99FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE563BB52B5A6AB1004F99FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,7 +86,6 @@
 				EEE573F12B74CCB40040AC56 /* Scenes */,
 				EE563BA72B5A6AB0004F99FB /* AppDelegate.swift */,
 				EE563BA92B5A6AB0004F99FB /* SceneDelegate.swift */,
-				EE563BAB2B5A6AB0004F99FB /* ViewController.swift */,
 				EE563BB02B5A6AB1004F99FB /* Assets.xcassets */,
 				EE563BB22B5A6AB1004F99FB /* LaunchScreen.storyboard */,
 				EE563BB52B5A6AB1004F99FB /* Info.plist */,
@@ -227,7 +224,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE563BAC2B5A6AB0004F99FB /* ViewController.swift in Sources */,
 				EE563BA82B5A6AB0004F99FB /* AppDelegate.swift in Sources */,
 				EE563BAA2B5A6AB0004F99FB /* SceneDelegate.swift in Sources */,
 				EEE573F32B74CE680040AC56 /* MainViewController.swift in Sources */,
