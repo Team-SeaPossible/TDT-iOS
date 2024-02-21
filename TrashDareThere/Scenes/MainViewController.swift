@@ -9,40 +9,62 @@ import UIKit
 import SnapKit
 
 class MainViewController: UIViewController {
+    private var levelCount = 0
+    
     private var topView: UIView = {
         let view = UIView()
-        view.backgroundColor = .cyan
+        view.backgroundColor = UIColor(red: 177/255, green: 249/255, blue: 254/255, alpha: 1)
         return view
     }()
     
     private var levelView: UIView = {
         let view = UIView()
-        view.backgroundColor = .gray
         return view
+    }()
+    
+    private var levelImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = TDTImageCollection.levelLow
+        imageView.contentMode = .scaleAspectFit
+        return imageView
     }()
     
     private var characterView: UIView = {
         let view = UIView()
-        view.backgroundColor = .systemCyan
         return view
+    }()
+    
+    private var characterImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = TDTImageCollection.turtle
+        imageView.contentMode = .scaleAspectFill
+        return imageView
     }()
     
     private var bottomView: UIView = {
         let view = UIView()
-        view.backgroundColor = .systemBlue
+        view.backgroundColor = UIColor(red: 73/255, green: 147/255, blue: 225/255, alpha: 1)
         return view
     }()
     
     private lazy var leftArrowButton: UIButton = {
         let button = UIButton()
         button.setImage(TDTImageCollection.leftArrowImage, for: .normal)
+        button.addTarget(self, action: #selector(showCameraViewController), for: .touchUpInside)
         return button
     }()
     
     private var currentTabImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = TDTImageCollection.fish
+        imageView.image = TDTImageCollection.broom
         return imageView
+    }()
+    
+    private lazy var broomButton: UIButton = {
+        let button = UIButton()
+        button.setImage(TDTImageCollection.broom, for: .normal)
+        button.addTarget(self, action: #selector(broomPressed), for: .touchUpInside)
+        return button
     }()
     
     private lazy var rightArrowButton: UIButton = {
@@ -70,9 +92,13 @@ class MainViewController: UIViewController {
         
         topView.addSubview(levelView)
         
+        levelView.addSubview(levelImageView)
+        
+        characterView.addSubview(characterImageView)
+        
         bottomView.addSubview(leftArrowButton)
         bottomView.addSubview(rightArrowButton)
-        bottomView.addSubview(currentTabImageView)
+        bottomView.addSubview(broomButton)
     }
     
     private func makeConstraint() {
@@ -84,15 +110,19 @@ class MainViewController: UIViewController {
         
         levelView.snp.makeConstraints{ make in
             make.top.equalToSuperview().offset(64)
-            make.leading.equalToSuperview().offset(16)
-            make.trailing.equalToSuperview().inset(16)
-            make.height.equalTo(48)
+            make.leading.equalToSuperview().offset(8)
+            make.trailing.equalToSuperview().inset(8)
+            make.height.equalTo(54)
+        }
+        
+        levelImageView.snp.makeConstraints{ make in
+            make.edges.equalToSuperview()
         }
         
         bottomView.snp.makeConstraints{ make in
             make.bottom.equalToSuperview()
             make.leading.trailing.equalTo(view)
-            make.height.equalTo(200)
+            make.height.equalTo(150)
         }
         
         characterView.snp.makeConstraints{ make in
@@ -101,7 +131,11 @@ class MainViewController: UIViewController {
             make.bottom.equalTo(bottomView.snp.top)
         }
         
-        currentTabImageView.snp.makeConstraints{ make in
+        characterImageView.snp.makeConstraints{ make in
+            make.edges.equalToSuperview()
+        }
+        
+        broomButton.snp.makeConstraints{ make in
             make.center.equalToSuperview()
         }
         
@@ -117,12 +151,30 @@ class MainViewController: UIViewController {
     }
     
     @objc func showCameraViewController() {
-        
+        let cameraViewController = CameraViewController()
+        cameraViewController.modalPresentationStyle = .fullScreen
+        self.present(cameraViewController, animated: false)
     }
     
     @objc func showInformationViewController() {
         let informationViewController = InformationViewController()
         informationViewController.modalPresentationStyle = .fullScreen
         self.present(informationViewController, animated: false)
+    }
+    
+    @objc func broomPressed() {
+        if levelCount == 0 {
+            self.levelImageView.image = TDTImageCollection.level
+            self.characterImageView.image = TDTImageCollection.turtleClean
+            self.levelCount += 1
+        } else if levelCount == 1 {
+            self.levelImageView.image = TDTImageCollection.levelHigh
+            self.characterImageView.image = TDTImageCollection.turtleCleaner
+            self.levelCount += 1
+        } else if levelCount == 2 {
+            self.levelImageView.image = TDTImageCollection.levelLow
+            self.characterImageView.image = TDTImageCollection.turtle
+            self.levelCount = 0
+        }
     }
 }
