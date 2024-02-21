@@ -18,6 +18,9 @@
 		EE563BAA2B5A6AB0004F99FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE563BA92B5A6AB0004F99FB /* SceneDelegate.swift */; };
 		EE563BB12B5A6AB1004F99FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE563BB02B5A6AB1004F99FB /* Assets.xcassets */; };
 		EE563BB42B5A6AB1004F99FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE563BB22B5A6AB1004F99FB /* LaunchScreen.storyboard */; };
+		EEA6FB062B84A93A00C8CBD6 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA6FB052B84A93A00C8CBD6 /* CameraViewController.swift */; };
+		EEA6FB082B85F9C200C8CBD6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA6FB072B85F9C200C8CBD6 /* MapViewController.swift */; };
+		EEA6FB0A2B85F9D300C8CBD6 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA6FB092B85F9D300C8CBD6 /* GalleryViewController.swift */; };
 		EEE573F32B74CE680040AC56 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE573F22B74CE680040AC56 /* MainViewController.swift */; };
 		EEE573F62B74CEFF0040AC56 /* TDTImageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE573F52B74CEFF0040AC56 /* TDTImageCollection.swift */; };
 		EEE573F82B74D1C70040AC56 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE573F72B74D1C70040AC56 /* InformationViewController.swift */; };
@@ -34,6 +37,9 @@
 		EE563BB02B5A6AB1004F99FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE563BB32B5A6AB1004F99FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE563BB52B5A6AB1004F99FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEA6FB052B84A93A00C8CBD6 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		EEA6FB072B85F9C200C8CBD6 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		EEA6FB092B85F9D300C8CBD6 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		EEE573F22B74CE680040AC56 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EEE573F52B74CEFF0040AC56 /* TDTImageCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDTImageCollection.swift; sourceTree = "<group>"; };
 		EEE573F72B74D1C70040AC56 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
@@ -110,8 +116,11 @@
 		EEE573F12B74CCB40040AC56 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				EEA6FB052B84A93A00C8CBD6 /* CameraViewController.swift */,
 				EEE573F22B74CE680040AC56 /* MainViewController.swift */,
 				EEE573F72B74D1C70040AC56 /* InformationViewController.swift */,
+				EEA6FB072B85F9C200C8CBD6 /* MapViewController.swift */,
+				EEA6FB092B85F9D300C8CBD6 /* GalleryViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -254,6 +263,9 @@
 				EEE573F32B74CE680040AC56 /* MainViewController.swift in Sources */,
 				EEE573F62B74CEFF0040AC56 /* TDTImageCollection.swift in Sources */,
 				EEE573F82B74D1C70040AC56 /* InformationViewController.swift in Sources */,
+				EEA6FB0A2B85F9D300C8CBD6 /* GalleryViewController.swift in Sources */,
+				EEA6FB062B84A93A00C8CBD6 /* CameraViewController.swift in Sources */,
+				EEA6FB082B85F9C200C8CBD6 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
