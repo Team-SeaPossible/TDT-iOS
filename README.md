@@ -19,7 +19,7 @@
 <p>
   Our team members are very interested in the problem of marine litter. While researching the data, I learned that marine litter is caused not only by being dumped directly into the ocean, but also by rain and rivers that litter the side of the road.
 </p>
-### About the goals we chose
+**About the goals we chose**
 <p>
   We chose 13, climate action and 14, life below water. Our team members were very interested in marine pollution and watched a documentary while doing related research. It was about suffering marine life and we learned that the biodiversity of the sea has a big impact on climate change.
 </p>
